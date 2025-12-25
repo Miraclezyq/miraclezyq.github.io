@@ -432,6 +432,32 @@
                 margin: 15px 0;
             }
         }
+/* 访客地图容器 */
+.visitor-map-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* 强制限制地图宽度 */
+.visitor-map-inner {
+  width: 450px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* 🔥 关键：覆盖第三方脚本的全屏行为 */
+.visitor-map-inner iframe,
+.visitor-map-inner canvas,
+.visitor-map-inner svg {
+  width: 450px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+  display: block;
+}
+
+
     </style>
 </head>
 <body>
@@ -664,14 +690,35 @@ Driven by the goal of improving access to and understanding of complex academic 
     </div>
     
     <!-- 页脚 -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2025 Yiqin(Miracle) Zhang. All Rights Reserved.</p>
-                <p>Last updated on May 12, 2025.</p>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+
+            <p>© 2025 Yiqin(Miracle) Zhang. All Rights Reserved.</p>
+            <p>Last updated on May 13, 2025.</p>
+
+            <div class="visitor-map-wrapper">
+              <script
+                type="text/javascript"
+                id="clustrmaps"
+                src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=450&t=tt&d=你的d参数&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff">
+              </script>
             </div>
+
         </div>
-    </footer>
+    </div>
+	<div class="visitor-map-wrapper">
+  <div class="visitor-map-inner">
+    <script
+      type="text/javascript"
+      id="mapmyvisitors"
+      src="https://mapmyvisitors.com/map.js?cl=ffffff&w=450&t=n&d=AbaHgppNZJJEgjkwRC0FqEIML_CGp_5hQJZf2BCZyp0&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff">
+    </script>
+  </div>
+</div>
+
+</footer>
+
     
     <!-- JavaScript -->
     <script>
@@ -744,6 +791,5 @@ Driven by the goal of improving access to and understanding of complex academic 
             });
         });
     </script>
-	<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=AbaHgppNZJJEgjkwRC0FqEIML_CGp_5hQJZf2BCZyp0&cl=ffffff&w=a"></script>
 </body>
 </html>
