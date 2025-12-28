@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yiqin (Miracle) Zhang | Publications</title>
+  <link rel="icon" type="image/png" href="img/Qicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container navbar">
+      <a class="nav-brand" href="index.html">Yiqin (Miracle) Zhang</a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#research">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="talks.html">Talks &amp; Media</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress__bar"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1 class="section-title">Publications</h1>
+      <p class="muted">Full publication list grouped by type. </p>
+    </section>
+
+    <section class="section">
+      <div class="filters">
+        <label for="pubSearch">
+          Keyword search
+          <input id="pubSearch" type="search" placeholder="Search title, authors, or venue">
+        </label>
+        <label for="pubYear">
+          Year
+          <select id="pubYear">
+            <option value="">All years</option>
+          </select>
+        </label>
+        <label for="pubType">
+          Publication type
+          <select id="pubType">
+            <option value="">All types</option>
+          </select>
+        </label>
+      </div>
+      <p class="muted" id="pubCount">0 results</p>
+    </section>
+
+    <section class="section" id="pubList"></section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Last updated: Dec 28, 2025</p>
+      <div class="footer-map">
+        <p class="footer-map__title">Visitor Map</p>
+        <div class="footer-map__inner">
+          <!-- Update only the script URL below if your map provider changes. -->
+          <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=292&t=n&d=AbaHgppNZJJEgjkwRC0FqEIML_CGp_5hQJZf2BCZyp0&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/publications.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
