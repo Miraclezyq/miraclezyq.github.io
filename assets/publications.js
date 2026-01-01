@@ -96,6 +96,24 @@ window.PUBLICATIONS = [
     },
     featured: false
   },
+    {
+    id: "pub-2025-CSSCI-chinese",
+    year: 2025,
+    type: "Chinese Journals",
+    title: "面向 AI4Science 的科学论文图像语义描述框架体系构建研究",
+    authors: " 张逸勤 邓三鸿 巩洪村 杨杰 刘浏",
+    venue: "图书馆杂志",
+    reference: "[1]张逸勤，邓三鸿，巩洪村，杨杰，刘浏.面向 AI4Science 的科学论文图像语义描述框架体系构建研究[J/OL]．图书馆杂志.",
+    links: {
+      pdf: "",
+      doi: "",
+      code: "",
+      data: "",
+      blog: "",
+      talk: ""
+    },
+    featured: false
+  },
   {
     id: "pub-2025-CSSCI-chinese",
     year: 2025,
