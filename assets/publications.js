@@ -349,24 +349,6 @@ window.PUBLICATIONS = [
     featured: false
   },
   {
-    id: "pub-2020-CSSCI-chinese",
-    year: 2020,
-    type: "Chinese Journals",
-    title: "科研论文基金项目“一文多注”和不实标注研究——以2014-2018年国家社科基金项目为例",
-    authors: " 叶文豪 洪磊 唐梦嘉 张逸勤",
-    venue: "图书与情报",
-    reference: "[1]叶文豪,洪磊,唐梦嘉,张逸勤.科研论文基金项目“一文多注”和不实标注研究——以2014-2018年国家社科基金项目为例[J].图书与情报,2020(6):65-72",
-    links: {
-      pdf: "",
-      doi: "",
-      code: "",
-      data: "",
-      blog: "",
-      talk: ""
-    },
-    featured: false
-  },
-  {
     id: "pub-2022-CSSCI-chinese",
     year: 2022,
     type: "Chinese Journals",
